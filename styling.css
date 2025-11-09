@@ -1,0 +1,112 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.all,.links{
+    display:flex;
+}
+.all{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.portifolia{
+    font-size: 2rem;
+    color:white;
+    position:sticky;
+}
+
+.portifolia:hover{
+    cursor: default;
+}
+
+.links{
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    position: sticky;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+#hamburgerNav{
+    display: none;
+}
+.navlink{
+    display: none;
+}
+@media only screen and (max-width:700px){
+    .navlink{
+        display:block;
+    }
+    #hamburgerNav{
+        display:block;
+        display:flex;
+    }
+    .all{
+        display: none;
+    }
+}
+
+#openNav{
+    font-size: 1.5rem;
+}
+#close{
+    font-size: 2.5rem;
+}
+
+.hamburger-icon{
+    color:white;
+    font-size: 1.5rem;
+}
+
+#hamburgerNav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+
+.menu-links{
+    align-content: center;
+    background-color: rgb(39, 39, 116);
+    font-size: 1.5rem;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+
