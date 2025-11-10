@@ -27,9 +27,10 @@ body{
     height: 17vh;
 }
 .portifolia{
-    font-size: 2rem;
+    font-size: 3rem;
     color:white;
     position:sticky;
+    font-weight: 700;
 }
 
 .portifolia:hover{
@@ -115,15 +116,30 @@ a:hover::after {
   width: 100%;
 }
 
-
- 
 .info{
     font-size: 2rem;
     color: white;
 }
 
+.cvBtn,.contact{
+    border-radius: 0.8cm;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: rgb(58, 4, 119);
+    background-color: rgb(245, 245, 245);
+}
 
+.pic{
+    margin-left: 25ch;
+}
 
+.section{
+    display:flex;
+}
+.info{
+    margin:auto;
+}
 
 
 
