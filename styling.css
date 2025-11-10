@@ -43,17 +43,6 @@ body{
     position: sticky;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    text-decoration-color: white;
-}
-
-a:hover{
-    color: antiquewhite;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
 
 #hamburgerNav{
     display: none;
@@ -62,8 +51,8 @@ a:hover{
     display: none;
 }
 @media only screen and (max-width:700px){
-    .navlink{
-        display:block;
+    #closeNav{
+        display:none;
     }
     #hamburgerNav{
         display:block;
@@ -104,6 +93,36 @@ a:hover{
     flex-direction: column;
     gap: 10px;
 }
+
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px; /* distance from text */
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+
+ 
+.info{
+    font-size: 2rem;
+    color: white;
+}
+
+
 
 
 
